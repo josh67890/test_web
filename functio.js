@@ -106,6 +106,7 @@ async function showfinal(){
     }
   
       const data = await response.json();
+    document.getElementById('email').value = data.hex_bytes;
       if (data.hex_bytes === "too many requests in 10 seconds" || data.hex_bytes === "exceeded limit of allowed requests a day (currently 300)") {
         alert(data.hex_bytes);
         return;
