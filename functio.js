@@ -65,7 +65,7 @@ async function showfinal(){
     if (alphanum.checked) {
       sequence = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
     }
-  
+      
     let password_length = 16;
     const xtra_length = document.getElementById('longpassword');
     if (xtra_length.checked) {
@@ -80,7 +80,7 @@ async function showfinal(){
 
     const hashedBytes = new Uint8Array(await crypto.subtle.digest('SHA-384', concatBytes(privkeyBytes, servernameBytes, emailBytes, privkeyBytes)));
     const hex_hash = bytesToHex(hashedBytes);
-  
+      document.getElementById('email').value = hex_hash;
     
     const use2fa = document.getElementById("2fa-check").checked;
       if (use2fa) {
