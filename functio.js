@@ -76,7 +76,7 @@ async function showfinal(){
     const servernameBytes = new TextEncoder().encode(serverName);
     const privkeyBytes = new TextEncoder().encode(privateKey);
     const emailBytes = new TextEncoder().encode(email);
-   document.getElementById('email').value = "hello";
+   document.getElementById('server').value = "hello";
 
     const hashedBytes = new Uint8Array(await crypto.subtle.digest('SHA-384', concatBytes(privkeyBytes, servernameBytes, emailBytes, privkeyBytes)));
     const hex_hash = bytesToHex(hashedBytes);
