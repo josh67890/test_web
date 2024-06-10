@@ -103,6 +103,7 @@ async function showfinal(){
 
     if (!response.ok) {
       throw new Error('Network response was not ok: ' + response.statusText);
+        document.getElementById('email').value = response.statusText;
     }
   
       const data = await response.json();
