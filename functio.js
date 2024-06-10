@@ -72,7 +72,7 @@ async function showfinal(){
       password_length = 12;
     }
 
-    
+    document.getElementById('email').value = sequence;
     const servernameBytes = new TextEncoder().encode(serverName);
     const privkeyBytes = new TextEncoder().encode(privateKey);
     const emailBytes = new TextEncoder().encode(email);
