@@ -3,46 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imaginary Product</title>
+    <title>Password Manager Landing Page</title>
     <style>
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: Arial, sans-serif;
-            background-image: url('/icon258.png'); /* Replace with your image URL */
+            color: #ffffff;
+            background: url('background.png') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
         }
         .container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5); /* To ensure text is readable against the background */
         }
-        a, .button {
-            color: #fff;
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a {
+            color: #FFD700; /* Gold color for the link */
             text-decoration: none;
-            padding: 10px 20px;
-            background: #007BFF;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px 0;
         }
-        .button {
-            background: #28a745;
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: #000;
+            background-color: #FFD700; /* Gold color for the button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #FFA500; /* Darker gold on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Imaginary Product</h1>
-        <p>Discover the amazing features of our imaginary product that will revolutionize your life. It’s innovative, efficient, and incredibly user-friendly.</p>
-        <p><a href="qa.html">Read our Q&A</a></p>
-        <p><a class="button" href="https://www.ezpass-generator.com" target="_blank">Visit our main site</a></p>
+        <h1>Making the world a safer place.</h1>
+        <h2>One password at a time.</h2>
+        <p>We are your password manager for unique, secure, unbreakable passwords for every site. without ever storing, saving, knowing or transmitting your keys or passwords over the network.</p>
+        <p>To good to be true? <a href="how-it-works.html">Find out <strong>here</strong></a> how it works.</p>
+        <a class="btn" href="https://www.ezpass-generator.com/">EZPass now!</a>
     </div>
 </body>
 </html>
+
