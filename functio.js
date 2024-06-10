@@ -72,11 +72,11 @@ async function showfinal(){
       password_length = 12;
     }
 
-    document.getElementById('email').value = sequence;
+   
     const servernameBytes = new TextEncoder().encode(serverName);
     const privkeyBytes = new TextEncoder().encode(privateKey);
     const emailBytes = new TextEncoder().encode(email);
-  
+   document.getElementById('email').value = "hello";
 
     const hashedBytes = new Uint8Array(await crypto.subtle.digest('SHA-384', concatBytes(privkeyBytes, servernameBytes, emailBytes, privkeyBytes)));
     const hex_hash = bytesToHex(hashedBytes);
